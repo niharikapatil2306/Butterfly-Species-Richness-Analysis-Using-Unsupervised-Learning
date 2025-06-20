@@ -72,6 +72,7 @@ This is a research project. For questions or collaboration opportunities, please
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ---
 
 *This project was developed as part of Machine Learning in Sciences I coursework focusing on biodiversity analysis using machine learning techniques.*
