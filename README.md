@@ -19,44 +19,30 @@ cd Butterfly-Species-Richness-Analysis-Using-Unsupervised-Learning
 ```
 
 ## Dataset
-Source: Multi-source environmental and biodiversity databases
-Size: 45 locations × 13 environmental features
-Coverage: Global locations including countries, cities, and topological features
-Key Features:
-
-Climate variables (Köppen-Geiger classification, humidity, temperature)
-Geographic factors (latitude, elevation, area, island status)
-Land use patterns (deforestation, agriculture, urbanization)
-Biodiversity indicators (plant species, butterfly species richness)
+- Source: Multi-source environmental and biodiversity databases
+- Size: 45 locations × 13 environmental features
+- Coverage: Global locations including countries, cities, and topological features
+  
+### Key Features:
+- Climate variables (Köppen-Geiger classification, humidity, temperature)
+- Geographic factors (latitude, elevation, area, island status)
+- Land use patterns (deforestation, agriculture, urbanization)
+- Biodiversity indicators (plant species, butterfly species richness)
 
 ## Methodology
 
 ### Unsupervised Learning Techniques Used:
-Principal Component Analysis (PCA): Dimensionality reduction and feature importance analysis
-Autoencoders: Neural network-based non-linear dimensionality reduction
-K-means Clustering: Species richness pattern identification (k=3)
-Data Preprocessing: Z-score normalization, mean imputation, one-hot encoding
-Evaluation Metrics: Variance explained, reconstruction loss, silhouette analysis
+- Principal Component Analysis (PCA): Dimensionality reduction and feature importance analysis
+- Autoencoders: Neural network-based non-linear dimensionality reduction
+- K-means Clustering: Species richness pattern identification (k=3)
+- Data Preprocessing: Z-score normalization, mean imputation, one-hot encoding
+- Evaluation Metrics: Variance explained, reconstruction loss, silhouette analysis
 
 ## Results
-Dimensionality Reduction: Successfully reduced 13D data to 8 key components capturing ~100% variance
-Variance Explanation: First two principal components explain 52.82% of total variance (PC1: 33.74%, PC2: 19.08%)
-Ecological Clusters Identified:
-
-Cluster 1: Tropical regions (1000+ species) - Tanzania, Cameroon
-Cluster 2: Temperate areas (78-925 species) - Austria, Germany
-Cluster 3: Insular zones (<100 species) - Malta, Ireland, UK
-
-
-Primary Drivers: Latitude, Köppen-Geiger climate classification, deforestation levels
-Model Performance: Autoencoder achieved 0.70 reconstruction loss after 4500 epochs
-
-Visualizations:
-
-Feature correlation heatmaps
-PCA variance explanation plots
-3D clustering visualizations
-Geographic distribution patterns
+- Dimensionality Reduction: Successfully reduced 13D data to 8 key components capturing ~100% variance
+- Variance Explanation: First two principal components explain 52.82% of total variance (PC1: 33.74%, PC2: 19.08%)
+- Primary Drivers: Latitude, Köppen-Geiger climate classification, deforestation levels
+- Model Performance: Autoencoder achieved 0.70 reconstruction loss after 4500 epochs
 
 ## Usage
 
@@ -68,28 +54,23 @@ Geographic distribution patterns
 2. Run cells sequentially to reproduce the analysis
 3. Modify parameters as needed for different experiments
 
-### Notebook Structure
-- `Data_Exploration.ipynb`: Initial data analysis and visualization
-- `Clustering_Analysis.ipynb`: Main unsupervised learning implementation
-- `Results_Visualization.ipynb`: Results interpretation and plots
-
 ## Key Findings
-Climate Impact: Tropical regions show significantly higher species richness (1000+ species) compared to temperate and insular areas
-Geographic Patterns: Strong negative correlation between latitude and species richness, with peak diversity near the equator
-Environmental Drivers: Deforestation, urbanization, and climate classification emerged as critical factors affecting butterfly distribution
-Methodological Insight: Autoencoders captured complex non-linear relationships that traditional PCA methods missed
+- Climate Impact: Tropical regions show significantly higher species richness (1000+ species) compared to temperate and insular areas
+- Geographic Patterns: Strong negative correlation between latitude and species richness, with peak diversity near the equator
+- Environmental Drivers: Deforestation, urbanization, and climate classification emerged as critical factors affecting butterfly distribution
+- Methodological Insight: Autoencoders captured complex non-linear relationships that traditional PCA methods missed
 
 ## Future Work
-Incorporate temporal data to analyze species richness trends over time
-Expand dataset to include more geographic regions and climate zones
-Implement advanced clustering techniques (DBSCAN, hierarchical clustering)
-Develop predictive models for species richness forecasting under climate change scenarios
-Integration with remote sensing data for real-time biodiversity monitoring
+- Incorporate temporal data to analyze species richness trends over time
+- Expand dataset to include more geographic regions and climate zones
+- Implement advanced clustering techniques (DBSCAN, hierarchical clustering)
+- Develop predictive models for species richness forecasting under climate change scenarios
+- Integration with remote sensing data for real-time biodiversity monitoring
 
 ## Contributing
 This is a research project. For questions or collaboration opportunities, please contact patilniharika2306@gmail.com.
 
 ## License
-[Specify license - MIT, Apache 2.0, or Academic Use Only]
+[MIT]
 
-*This project was developed as part of [research program/course/personal study] focusing on biodiversity analysis using machine learning techniques.*
+*This project was developed as part of Machine Learning in Sciences I coursework focusing on biodiversity analysis using machine learning techniques.*
